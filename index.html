@@ -1,1 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mamamoo Translations</title>
+
+  <!-- Font sources taken from the referenced page's font files -->
+  <!-- Heading font (INTERVIEWER) -->
+  <link rel="preload" href="https://assets.theparisreview.org/fonts/Interviewer-Display.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face{
+      font-family: "InterviewerDisplayCustom";
+      src: url("https://assets.theparisreview.org/fonts/Interviewer-Display.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      unicode-range: U+000-5FF;
+    }
+  </style>
+
+  <!-- Body font (site serif used for the quoted question) -->
+  <link rel="preload" href="https://assets.theparisreview.org/fonts/ParisReview-Serif.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face{
+      font-family: "PRBodySerifCustom";
+      src: url("https://assets.theparisreview.org/fonts/ParisReview-Serif.woff2") format("woff2");
+      font-weight: 400 700;
+      font-style: normal;
+      font-display: swap;
+      unicode-range: U+000-5FF;
+    }
+
+    /* Minimal reset and application of the two fonts */
+    :root{
+      --heading-font: "InterviewerDisplayCustom", serif;
+      --body-font: "PRBodySerifCustom", serif;
+      --base-bg: #ffffff;
+      --base-color: #111;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      background:var(--base-bg);
+      color:var(--base-color);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    body{
+      font-family: var(--body-font);
+      font-size:16px;
+      line-height:1.6;
+      padding:48px;
+    }
+
+    /* Heading style using the Interviewer font only */
+    h1,h2,h3{
+      font-family: var(--heading-font);
+      letter-spacing: -0.02em;
+      margin:0 0 0.5em 0;
+    }
+
+    h1{ font-size:48px; font-weight:700; }
+    h2{ font-size:32px; font-weight:700; }
+    h3{ font-size:20px; font-weight:700; }
+
+    /* Example utility classes */
+    .container{ max-width:900px; margin:0 auto; }
+    .lead{ font-size:20px; margin-bottom:1.25em; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>INTERVIEWER</h1>
+      <p class="lead">Did you always know that you were going to be a writer?</p>
+    </header>
+
+    <section>
+      <h2>Heading example</h2>
+      <p>This is a blank webpage template. Headings use the "INTERVIEWER" font; body text uses the serif used for the quoted question on the referenced page. No other layout or fonts from the original site are included.</p>
+    </section>
+  </main>
+</body>
+</html>
+
 
